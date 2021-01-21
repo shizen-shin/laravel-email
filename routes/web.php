@@ -18,5 +18,8 @@ Route::get('/', function () {
 });
 
 //mail
-Route::get('contact', 'ContactController@index');
-Route::post('contact', 'ContactController@send');
+// Route::get('contact', 'ContactController@index');
+// Route::post('contact', 'ContactController@send');
+
+Route::get('contact2', 'MailableController@index');
+Route::post('contact2', 'MailableController@send');
