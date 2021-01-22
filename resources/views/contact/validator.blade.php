@@ -4,7 +4,7 @@
 </div>
 @endif
 
-<form action="{{ url('validate') }}" method="POST">
+<form action="{{ url('validator') }}" method="POST">
 @csrf
 
  <p>名前：<input type="text" name="name" value="{{ old('name') }}" ></p>

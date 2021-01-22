@@ -97,7 +97,7 @@ return [
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => 'この項目は必須です。',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -135,9 +135,9 @@ return [
             'rule-name' => 'custom-message',
         ],
         //以下追記
-        // 'name' => [
-        //     'min' => ':min 文字以上で入力してください'
-        // ],
+        'name' => [
+            'min' => ':attributeは:min 文字以上で入力してください'
+        ],
     ],
 
     /*

@@ -17,9 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//mail
+//mail without Mailable
 // Route::get('contact', 'ContactController@index');
 // Route::post('contact', 'ContactController@send');
 
+
+//Mailable
 Route::get('contact2', 'MailableController@index');
 Route::post('contact2', 'MailableController@send');
+
+
+//Validatoin
+Route::get('validate', 'ValidateController@index');
+Route::post('validate', 'ValidateController@send');
+
+//Validatorファサード
+Route::get('validator', 'ValidatorController@index');
+Route::post('validator', 'ValidatorController@send');
