@@ -34,3 +34,8 @@ Route::post('validate', 'ValidateController@send');
 //Validatorファサード
 Route::get('validator', 'ValidatorController@index');
 Route::post('validator', 'ValidatorController@send');
+
+
+Route::get('scss', function () {
+    return view('scss');
+});

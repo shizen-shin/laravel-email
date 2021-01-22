@@ -1,0 +1,17 @@
+.c-page-headline{
+  margin-bottom: 24px;
+  padding-bottom: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  color: colors(default-text);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: blue;
+    width: 86px;
+    height: 2px;
+    bottom: 0;
+  }
+}
