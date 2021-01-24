@@ -21,4 +21,8 @@ class PseudoController extends Controller
     public function position(){
         return view('pseudo.position');
     }
+    
+    public function pointer(){
+        return view('pseudo.pointer');
+    }
 }

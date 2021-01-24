@@ -36,8 +36,12 @@ Route::get('validator', 'ValidatorController@index');
 Route::post('validator', 'ValidatorController@send');
 
 
+
 Route::get('scss', function () {
     return view('scss');
+});
+Route::get('test-css', function () {
+    return view('test-css');
 });
 
 //擬似要素・クラス
@@ -46,4 +50,5 @@ Route::group(['prefix'=>'pseudo', 'as'=>'pseudo'], function(){
     Route::get('class', 'PseudoController@class')->name('class');
     Route::get('modal', 'PseudoController@modal')->name('modal');
     Route::get('position', 'PseudoController@position')->name('position');
+    Route::get('pointer', 'PseudoController@pointer')->name('pointer');
 });
