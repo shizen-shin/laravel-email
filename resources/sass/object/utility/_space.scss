@@ -1,0 +1,30 @@
+@for $i from 0 through 10 {
+  .u-mt-#{$i} {
+    margin-top: #{$i * 8}px !important;
+  }
+  .u-mb-#{$i} {
+    margin-bottom: #{$i * 8}px !important;
+  }
+  .u-pt-#{$i} {
+    padding-top: #{$i * 8}px !important;
+  }
+}
+
+@for $i from 0 through 5 {
+  //margin
+  .u-mt-#{$i} {
+    margin-top: #{$i * 8}px !important;
+  }
+  .u-mb-#{$i} {
+    margin-bottom: #{$i * 8}px !important;
+  }
+  .u-ml-#{$i} {
+    margin-left: #{$i * 8}px !important;
+  }
+  .u-mr-#{$i} {
+    margin-right: #{$i * 8}px !important;
+  }
+  .u-m-#{$i} {
+    margin: #{$i * 8}px !important;
+  }
+}

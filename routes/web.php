@@ -39,3 +39,11 @@ Route::post('validator', 'ValidatorController@send');
 Route::get('scss', function () {
     return view('scss');
 });
+
+//擬似要素・クラス
+Route::group(['prefix'=>'pseudo', 'as'=>'pseudo'], function(){
+    Route::get('element', 'PseudoController@element')->name('element');
+    Route::get('class', 'PseudoController@class')->name('class');
+    Route::get('modal', 'PseudoController@modal')->name('modal');
+    Route::get('modal', 'PseudoController@position')->name('position');
+});

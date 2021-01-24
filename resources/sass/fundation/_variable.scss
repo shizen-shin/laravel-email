@@ -1,0 +1,15 @@
+$colors: (
+    default-text: #333,
+    myblue-default: #1684c4,
+    myblue-light: #1e97dd,
+    myblue-super-light: #89d4ff,
+    myblue-dark: #0d5d8b,
+    myblue-super-dark: #083e5e,
+);
+@function colors($key) {
+    @return map-get($colors, $key);
+}
+
+.hoge{
+  color: colors(myblue-default);
+}

@@ -1,0 +1,167 @@
+.u-prefix-hello{
+  font-weight: bold;
+  font-size: 24px;
+  color:blue;
+}
+
+.u-prefix-hello::before{
+  content: 'こんにちは';
+  color: red;
+}
+
+
+// .u-prefix-hello::before{
+//   content: url('../../../../public/img/small-cat.jpg');
+//   color: red;
+//   font-weight: bold;
+// }
+
+
+// .u-prefix-hello::before {
+//   content: '';
+//   display: inline-block;
+//   width: 100px;
+//   height: 100px;
+//   background-image: url(../../../../public/img/small-cat.jpg);
+//   background-size: cover;
+//   vertical-align: middle;
+// }
+
+.u-prefix-text{
+  position: relative;
+}
+
+.u-prefix-text::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background: gold;
+  width: 3px;
+  height: 20px;
+  top: 2px;
+  left: -5px;
+}
+
+.u-suffix-hello {
+  font-weight: bold;
+  &::after {
+    content: "こんにちは";
+    color: red;
+  }
+}
+
+
+.u-first-emphasis::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.u-emphasis {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.u-line-emphasis::first-line {
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.u-marker::marker {
+  color:yellow;
+}
+
+/* 擬似クラス */
+.u-hover-yellow:hover {
+  color: rgb(219, 219, 9);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.u-active-red:active {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.u-link-green:link {
+  color: green;
+}
+
+.u-visited-gold:visited {
+  color: gold;
+}
+
+.u-focus-red:focus{
+  background-color:lightyellow;
+  color: red;
+  font-weight: bold;
+}
+
+// ul li:nth-of-type(odd){
+//   color: red;
+//   font-size: 18;
+// }
+
+
+#modal {
+  display: none;
+}
+
+#modal:target{
+  width: 100%;
+  height: 100%;
+  position: absolute; //ないと画面が動く 
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal .message-box {
+  position: relative;  //ないと裏側になる
+  background-color: darkkhaki;
+  padding: 20px;
+  cursor: default;
+}
+
+#modal .close {
+  position: relative;
+  display: block;
+}
+
+#modal .close::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+
+#modal .close::after {
+  content: "x";
+  color: white;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+

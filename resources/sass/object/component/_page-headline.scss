@@ -5,13 +5,17 @@
   font-weight: bold;
   color: colors(default-text);
   position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    background: blue;
-    width: 86px;
-    height: 2px;
-    bottom: 0;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: inline-block;
+  //   background: blue;
+  //   width: 86px;
+  //   height: 2px;
+  //   bottom: 0;
+  // }
+}
+
+.c-underline {
+  text-decoration: underline;
 }

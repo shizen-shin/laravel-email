@@ -1,0 +1,10 @@
+.box {
+  width: 150px;
+  height: 50px;
+  &--blue{
+    background: blue;
+  }
+  &--yellow{
+    background: yellow;
+  }
+}
