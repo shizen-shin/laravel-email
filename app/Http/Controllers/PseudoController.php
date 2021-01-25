@@ -27,6 +27,7 @@ class PseudoController extends Controller
     }
     
     public function selection(){
-        return view('pseudo.selection');
+        $name = greeting("xxx");
+        return view('pseudo.selection', ['name'=>$name]);
     }
 }
