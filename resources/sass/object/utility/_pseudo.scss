@@ -168,9 +168,7 @@
 .bg-red{
   background:red;
   color: white;
-  // height:100%;
-  display: flex;
-
+  width: 100%;
 }
 
 .bg-blue{
@@ -192,6 +190,60 @@
   border: solid lightgray 1px;
   width: 50%;
 }
+
+
+//media-query
+.media {
+  height: 20%;
+  background:red;
+  min-width: 60px;
+  max-width: 50%;
+  font-size: 12px;
+  color: white;
+  padding: 5px;
+  @media screen and (min-width:200px) and (max-width: 400px) { 
+      /*　画面サイズ200~400px　*/
+    & { 
+        background:gold;
+        font-size: 14px;
+        color: gray;
+        max-width: 60%;
+        & ::before {
+          content: "【200px~400px】";
+          color: black;
+        }
+      }
+  }
+  @media screen and (min-width:600px) and ( max-width:800px) {
+      /*　画面サイズ600~800px　*/
+      & { 
+        background:yellowgreen;
+        height: 30%;
+        font-size: 20px;
+        color: white;
+        max-width: 80%;
+        & ::before {
+          content: "【600px~800px】";
+          color: black;
+        }
+      }
+    }
+  @media screen and (min-width:1000px) {
+      /*　画面サイズ1000px以上　*/
+      & { 
+        background:cornsilk;
+        height: 40%;
+        font-size: 32px;
+        color: darkgray;
+        max-width: 90%;
+        & ::before {
+          content: "【1000px~】";
+          color: black;
+        }
+      }
+    }
+}
+
 
 
 

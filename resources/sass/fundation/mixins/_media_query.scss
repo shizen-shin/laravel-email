@@ -46,17 +46,125 @@ $breakpoint-up: (
 // }
 
 
-.p-corporate-index {
-  .p-section{
-      .p-section-headline{
-          margin-bottom: 40px;
-          @include mq-up(md){
-              margin-bottom: 24px;
-          }
-      }
+.class {
+  font-size: 12px;
+  @include mq-up('sm') {
+    font-size: 18px;
   }
 }
 
-.hoge2{
-  color: red;
+.parent {
+  .ireko1 {
+    .ireko2 {
+        color: red;
+    }
+  }
+}
+
+
+.parent {
+  &__ireko1 {
+      font-weight: bold;
+    .--ireko2 {
+      color: blue;
+    }
+  }
+}
+
+.msg-box {
+  & --red  {
+    color: red;
+  }
+}
+
+.msg-box {
+  //デフォルトの設定
+  & {
+    border: solid black 1px;
+    padding: 2rem;
+  }
+  //文字色：赤ver
+  &--red {
+    color: red;
+  }
+  //文字色：青ver
+  &--blue {
+    color: blue;
+  }
+  //太字ver
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+
+.msg-box {
+  p & {
+    background: red;
+  }
+  div > & {
+    background: blue;
+  }
+  .container & {
+    background: orange;
+  }
+}
+
+
+// mixinを定義
+@mixin test($color: yellow, $fsize: 32px) {
+  color: $color;
+  font-size: $fsize;
+  @content;
+}
+
+// mixinを呼び出す
+.class {
+  @include test {
+    max-width: 60%;
+  };
+  font-weight: bold;
+}
+
+.class2 {
+  @include test(blue, 18px);
+  font-weight: bold;
+}
+
+.class3 {
+  @include test($fsize: 18px, $color: green);
+  font-weight: bold;
+}
+
+.class4 {
+  @include test(green, 18px){
+    max-width: 70%;
+  };
+  font-weight: bold;
+}
+
+
+
+// mixinを呼び出す
+.class {
+  @include test;
+  font-weight: bold;
+}
+
+$test: red;
+
+.class {
+  color: $test;
+}
+
+$test2: ('default': #333);
+
+.class {
+  color: map-get($test2, 'default');
+}
+
+$map-get: map-get($test2, 'default');
+
+.class2 {
+  color: #{$map-get}
 }
