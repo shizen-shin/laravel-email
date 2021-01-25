@@ -598,3 +598,31 @@ div > .msg-box {
     color: black;
   }
 }
+
+::-moz-selection {
+  background: cornsilk;
+}
+
+::selection {
+  background: cornsilk;
+}
+
+p::-moz-selection {
+  background: coral;
+  color: white;
+}
+
+p::selection {
+  background: coral;
+  color: white;
+}
+
+.fifth::-moz-selection {
+  background: yellow;
+  color: black;
+}
+
+.fifth::selection {
+  background: yellow;
+  color: black;
+}

@@ -51,4 +51,5 @@ Route::group(['prefix'=>'pseudo', 'as'=>'pseudo'], function(){
     Route::get('modal', 'PseudoController@modal')->name('modal');
     Route::get('position', 'PseudoController@position')->name('position');
     Route::get('pointer', 'PseudoController@pointer')->name('pointer');
+    Route::get('selection', 'PseudoController@selection')->name('selection');
 });

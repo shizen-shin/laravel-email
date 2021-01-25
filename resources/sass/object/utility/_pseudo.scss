@@ -245,6 +245,23 @@
 }
 
 
+::selection {
+  background: cornsilk;
+}
+
+p::selection {
+  background: coral;
+  color: white;
+}
+
+.fifth::selection {
+  background: yellow;
+  color: black;
+}
+
+
+
+
 
 
 

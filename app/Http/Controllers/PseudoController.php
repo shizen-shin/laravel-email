@@ -25,4 +25,8 @@ class PseudoController extends Controller
     public function pointer(){
         return view('pseudo.pointer');
     }
+    
+    public function selection(){
+        return view('pseudo.selection');
+    }
 }
