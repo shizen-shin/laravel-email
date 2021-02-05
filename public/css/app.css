@@ -626,3 +626,43 @@ p::selection {
   background: yellow;
   color: black;
 }
+
+li .fi-li {
+  border: black solid 3px;
+}
+
+.triangle {
+  border-top: 50px solid #F0897F;
+  border-right: 50px solid #f6da69;
+  border-bottom: 50px solid #b2ce54;
+  border-left: 50px solid #6aa7cd;
+}
+
+.flexbox div {
+  background: skyblue;
+  width: 200px;
+  height: 130px;
+}
+
+.flexbox p {
+  background: yellow;
+  width: 150px;
+  height: 80px;
+}
+
+.flexbox {
+  border: solid lightgray 4px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  ul {
+    flex-direction: column;
+  }
+}

@@ -53,3 +53,5 @@ Route::group(['prefix'=>'pseudo', 'as'=>'pseudo'], function(){
     Route::get('pointer', 'PseudoController@pointer')->name('pointer');
     Route::get('selection', 'PseudoController@selection')->name('selection');
 });
+
+Route::get('d-table', function(){ return view('d-table'); });

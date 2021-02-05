@@ -4,8 +4,6 @@
  @import "fundation/mixins/media_query";
  @import "fundation/variable";
 
-
-
 /**
  * object component
  */
@@ -16,4 +14,6 @@
  * object utility
  */
  @import "object/utility/space";
- @import "object/utility/pseudo"
+ @import "object/utility/pseudo";
+ @import "object/utility/li";
+ @import "object/utility/d-table";
