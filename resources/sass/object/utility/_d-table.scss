@@ -1,9 +1,10 @@
-.flexbox div{
-  background: skyblue;
-  // margin-left: 80px;
-  width: 200px;
-  height: 130px;
-}
+// .flexbox div{
+//   background: rgba(165, 192, 202, 0.116);
+//   // margin-left: 80px;
+//   width: 50px;
+//   height: 60px;
+//   // flex: 2;
+// }
 
 .flexbox p{
   background: yellow;
@@ -13,11 +14,23 @@
 }
 
 .flexbox{
-  border:solid lightgray 4px;
-  width: 90%;
-  display:flex;
-  justify-content: space-evenly;
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  // align-items: center;
+  & .resize {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.flexbox2{
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: left;
 }
 
 
@@ -26,4 +39,62 @@ ul {
   @include mq-down(md){
     flex-direction: column;
   }
+}
+
+
+.p-service-create-flow {
+  border: solid 1px lightgray;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  display: flex;
+  counter-reset: flow 0;
+}
+.p-service-create-flow li{
+  display: flex;
+}
+
+.p-service-create-flow__textwrapper {
+  margin-left: 16px;
+}
+
+.p-service-create-flow__titles {
+  display: flex;
+}
+
+
+.p-service-create-flow__title {
+  vertical-align: top;
+  margin-top: 14px;
+  color: #1f7661;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.p-service-create-flow__incharge {
+  vertical-align: top;
+  margin-top: 4px;
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+  width: 68px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #37a673;
+}
+
+.p-service-create-flow__details {
+  vertical-align: top;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  width: 154px;
+}
+
+.resize{
+  width:100px;
+  height:80px;
 }

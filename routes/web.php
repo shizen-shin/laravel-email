@@ -55,3 +55,9 @@ Route::group(['prefix'=>'pseudo', 'as'=>'pseudo'], function(){
 });
 
 Route::get('d-table', function(){ return view('d-table'); });
+
+Route::get('animate', function(){ return view('animate'); });
+
+Route::get('line', function(){ return view('line'); });
+
+Route::get('grid', function(){ return view('grid'); });
