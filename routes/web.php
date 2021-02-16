@@ -61,3 +61,5 @@ Route::get('animate', function(){ return view('animate'); });
 Route::get('line', function(){ return view('line'); });
 
 Route::get('grid', function(){ return view('grid'); });
+
+Route::get('m-grid', function(){ return view('m-grid'); });

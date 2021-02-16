@@ -10,6 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "autoprefixer": "^10.2.4",
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
@@ -19,7 +20,9 @@
         "sass-loader": "^8.0.2"
     },
     "dependencies": {
+        "@material/layout-grid": "^10.0.0",
         "animate.css": "^4.1.1",
+        "glob": "^7.1.6",
         "wow.js": "^1.2.2"
     }
 }

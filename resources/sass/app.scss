@@ -1,12 +1,28 @@
+
+// @use "@material/layout-grid/mdc-layout-grid";
+
+
 /**
  * foundation
  */
  @import "fundation/mixins/media_query";
  @import "fundation/variable";
 
+
+/**
+* layout
+*/ 
+
+@import "layout/grid/grid";
+
+//  @import "~@material/layout-grid/mdc-layout-grid";
+//  @forward "~@material/layout-grid/mdc-layout-grid";
+
+
 /**
  * object component
  */
+
 @import "object/component/page-headline";
 @import "object/component/box";
 
@@ -18,3 +34,4 @@
  @import "object/utility/li";
  @import "object/utility/d-table";
  @import "object/utility/line";
+
