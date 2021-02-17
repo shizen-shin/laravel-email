@@ -19,11 +19,10 @@
 
 <br>
 
-<div class="internal-link-wrapper">
-  <a class="internal-link-text" href="#id">この記事にジャンプ</a>
-  <div class="internal-link-circle"></div>
-  <div class="internal-link-triangle"></div>
-</div>
+<a class="internal-link-wrapper internal-link-text" href="#id">
+    この記事にジャンプ
+    <div class="internal-link-circle"></div>
+</a>
 
 
 
@@ -38,7 +37,7 @@
 
 
 
-<dl>
+<dl id="id">
   <dt>忖度（そんたく）</dt>
   <dd>他人の心をおしはかること。また、おしはかって相手に配慮すること。</dd>
   <dd>「作家の意図を忖度する」「得意先の意向を忖度して取り計らう」</dd>

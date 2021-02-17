@@ -1410,7 +1410,7 @@ li .fi-li {
   border-left: 50px solid #6aa7cd;
 }
 
-div {
+.variable-test {
   color: #ffc107;
 }
 
@@ -1632,7 +1632,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -8px 0 0 -8px;
+  margin: -6px 0 0 -4px;
 }
 
 dl {
@@ -1647,44 +1647,4 @@ dl dt {
 
 dl dd {
   margin-left: 0;
-}
-
-.grid-wrapper {
-  display: -ms-grid;
-  display: grid;
-  color: #333;
-  font-size: 34px;
-  text-align: center;
-  line-height: 100px;
-  row-gap: 20px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  gap: 20px;
-  -ms-grid-columns: 100px 20px 100px 20px 100px 20px 100px;
-  grid-template-columns: 100px 100px 100px 100px;
-  -ms-grid-rows: 100px 20px 100px 20px 100px 20px 100px;
-  grid-template-rows: 100px 100px 100px 100px;
-          grid-template-areas: "a a a ." "b b . ." "c d e e" "f f g g";
-  grid-template: "a a a ." 100px "b b . ." 100px "c d e e" 100px "f f g g" 100px/100px 100px 100px 100px;
-  align-content: end;
-}
-
-.grid-wrapper2 {
-  text-align: center;
-  font-size: 30px;
-  border: double 4px gray;
-  /*grid system*/
-  height: 400px;
-  width: 700px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (100px)[4];
-  grid-template-columns: repeat(4, 100px);
-  -ms-grid-rows: (100px)[2];
-  grid-template-rows: repeat(2, 100px);
-  gap: 20px;
-}
-
-.mdc-layout-grid__cell {
-  border: solid 1px lightgray;
 }
