@@ -72,6 +72,4 @@
 <div class="sankaku"></div>
 
 <div>a</div>
-<div>b</div>
-<div>c</div>
 
