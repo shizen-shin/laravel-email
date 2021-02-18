@@ -140,3 +140,71 @@ dl dt{
 dl dd{
   margin-left: 0;
 }
+
+
+//MarkupBaloon
+.img-balloon{
+  &_wrapper{
+    margin: 8px 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  &_img{
+    width: 64px;
+    height: auto;
+  }
+  &_balloon{
+    margin-left: 24px;
+    padding: 16px ;
+    width: 100%;
+    font-size: 15px;
+    color: #333;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    position: relative; 
+    &::before{
+      content: "";    
+      border-left: 16px solid transparent;
+      border-top: 16px solid #ccc;
+      position: absolute;
+      top: 16px;
+      left: -16px;
+    }
+    &::after{
+      content: "";    
+      border-left: 15px solid transparent;
+      border-top: 15px solid white;
+      position: absolute;
+      top: 17px;
+      left: -14px;
+    }
+  }
+}
+
+.sankaku{
+  margin-left: 50px;
+  position: relative;
+  // width: 100px;
+  // height: 100px;
+  // display: inline-block;
+  // // border: 32px solid transparent;
+  // // border-top: 32px solid yellow;
+  // // border-right: 32px solid blue;
+  // border-bottom: 32px solid lightgray;
+  // border-left: 32px solid lightgray;
+  // transform: rotate(45deg);
+  &::before{
+    content: "";    
+    border-left: 16px solid transparent;
+    border-top: 16px solid #ccc;
+    position: absolute;
+  }
+  &::after{
+    content: "";    
+    border-left: 15px solid transparent;
+    border-top: 15px solid white;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+  }
+}

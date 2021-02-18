@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
 
 <div class="headline">
@@ -53,3 +54,21 @@
   <dd>没年： 1575年</dd>
   <dd>戦国時代の日本の足軽。奥平家の家臣。名は勝商（かつあき）</dd>
 </dl>
+
+
+
+<br>
+
+<div class="img-balloon_wrapper">
+  <img src=" {{ asset('img/small-cat.jpg') }}" alt="" class="img-balloon_img">
+  <div class="img-balloon_balloon">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+</div>
+
+<br><br>
+
+
+<div class="sankaku"></div>
+
+
